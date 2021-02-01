@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".SecondActivity"></activity>
-        <activity android:name=".MainActivity">
+        <!--        <activity android:name=".CoroutinesActivity"/>-->
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CoroutinesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
