@@ -1,8 +1,9 @@
 package com.kotlindemo
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import kotlinx.coroutines.*
 
 class CoroutinesActivity : AppCompatActivity() {
@@ -37,8 +38,12 @@ class CoroutinesActivity : AppCompatActivity() {
 
         Thread.sleep(200)
         println(">>>> end")
-        
+
         return 1
+    }
+
+    fun clickBtn2(view: View) {
+        ViewModelProvider(this).get(CoroutinesViewModel::class.java).request()
     }
 
 }
